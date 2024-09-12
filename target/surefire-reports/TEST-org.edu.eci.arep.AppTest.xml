@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.edu.eci.arep.AppTest" time="0.02" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.edu.eci.arep.AppTest" time="0.045" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\cristian.naranjo\Downloads\arepParcial\Parcial01-AREP\target\test-classes;C:\Users\cristian.naranjo\Downloads\arepParcial\Parcial01-AREP\target\classes;C:\Users\cristian.naranjo\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.class.path" value="C:\Users\cristian.naranjo\Downloads\arepParcial\Parcial01-AREP\target\test-classes;C:\Users\cristian.naranjo\Downloads\arepParcial\Parcial01-AREP\target\classes;C:\Users\cristian.naranjo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\cristian.naranjo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\cristian.naranjo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\cristian.naranjo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\cristian.naranjo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-server\9.4.43.v20210629\jetty-server-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-http\9.4.43.v20210629\jetty-http-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-util\9.4.43.v20210629\jetty-util-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-io\9.4.43.v20210629\jetty-io-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-servlet\9.4.43.v20210629\jetty-servlet-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-security\9.4.43.v20210629\jetty-security-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-util-ajax\9.4.43.v20210629\jetty-util-ajax-9.4.43.v20210629.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\cristian.naranjo\AppData\Local\Temp\surefire5936297708079700674\surefirebooter-20240912145407639_3.jar C:\Users\cristian.naranjo\AppData\Local\Temp\surefire5936297708079700674 2024-09-12T14-54-07_081-jvmRun1 surefire-20240912145407639_1tmp surefire_0-20240912145407639_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\cristian.naranjo\AppData\Local\Temp\surefire12619252897748457999\surefirebooter-20240912153229391_3.jar C:\Users\cristian.naranjo\AppData\Local\Temp\surefire12619252897748457999 2024-09-12T15-32-28_947-jvmRun1 surefire-20240912153229391_1tmp surefire_0-20240912153229391_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\cristian.naranjo\Downloads\arepParcial\Parcial01-AREP\target\test-classes;C:\Users\cristian.naranjo\Downloads\arepParcial\Parcial01-AREP\target\classes;C:\Users\cristian.naranjo\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\cristian.naranjo\Downloads\arepParcial\Parcial01-AREP\target\test-classes;C:\Users\cristian.naranjo\Downloads\arepParcial\Parcial01-AREP\target\classes;C:\Users\cristian.naranjo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\cristian.naranjo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\cristian.naranjo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\cristian.naranjo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\cristian.naranjo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-server\9.4.43.v20210629\jetty-server-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-http\9.4.43.v20210629\jetty-http-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-util\9.4.43.v20210629\jetty-util-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-io\9.4.43.v20210629\jetty-io-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-servlet\9.4.43.v20210629\jetty-servlet-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-security\9.4.43.v20210629\jetty-security-9.4.43.v20210629.jar;C:\Users\cristian.naranjo\.m2\repository\org\eclipse\jetty\jetty-util-ajax\9.4.43.v20210629\jetty-util-ajax-9.4.43.v20210629.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\cristian.naranjo"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\cristian.naranjo\AppData\Local\Temp\surefire5936297708079700674\surefirebooter-20240912145407639_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\cristian.naranjo\AppData\Local\Temp\surefire12619252897748457999\surefirebooter-20240912153229391_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
@@ -56,5 +56,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testApp" classname="org.edu.eci.arep.AppTest" time="0.002"/>
+  <testcase name="testApp" classname="org.edu.eci.arep.AppTest" time="0.003"/>
 </testsuite>

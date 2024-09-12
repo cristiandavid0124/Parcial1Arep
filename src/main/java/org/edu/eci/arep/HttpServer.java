@@ -59,6 +59,8 @@ public class HttpServer {
         }
     }
 
+
+
     public static String httpConnectionAPI(String query) throws IOException {
         URL url = new URL(GET_URL + query);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();

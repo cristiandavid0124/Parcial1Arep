@@ -1,5 +1,4 @@
 package org.edu.eci.arep;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,7 +11,6 @@ import java.net.URISyntaxException;
 import java.util.Arrays;
 
 public class HttpCalculatorServer {
-
     public static void main(String[] args) {
         try (ServerSocket serverSocket = new ServerSocket(36001)) {
             System.out.println("Calculator server running on port 36001");
@@ -51,9 +49,9 @@ public class HttpCalculatorServer {
                                         double[] sorted = bubbleSort(params);
                                         outputLine = "{\"Resultado\": \"" + Arrays.toString(sorted) + "\"}";
                                     } else {
-                                        Method methodToCall = Math.class.getMethod(methodName, double[].class);
-                                        double[] params = Arrays.stream(parameters).mapToDouble(Double::parseDouble).toArray();
-                                        Object result = methodToCall.invoke(null, new Object[]{params});
+                                        Method methodToCall = Math.class.getMethod(methodName, double.class);
+                                        double param = Double.parseDouble(parameters[0]);
+                                        Object result = methodToCall.invoke(null, param);
                                         outputLine = "{\"Resultado\": \"" + result + "\"}";
                                     }
                                 } catch (Exception e) {
@@ -80,21 +78,20 @@ public class HttpCalculatorServer {
         }
     }
 
-    private static double[] bubbleSort(double[] array) {
+    public static double[] bubbleSort(double[] array) {
         int n = array.length;
-        boolean swapped;
-        do {
-            swapped = false;
-            for (int i = 1; i < n; i++) {
-                if (array[i - 1] > array[i]) {
-                    double temp = array[i - 1];
-                    array[i - 1] = array[i];
-                    array[i] = temp;
-                    swapped = true;
+        double temp;
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j < (n - i); j++) {
+                if (array[j - 1] > array[j]) {
+                    temp = array[j - 1];
+                    array[j - 1] = array[j];
+                    array[j] = temp;
                 }
             }
-            n--;
-        } while (swapped);
+        }
         return array;
     }
 }
+
+
