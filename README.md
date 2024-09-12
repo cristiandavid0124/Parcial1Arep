@@ -18,3 +18,6 @@ bbl(3.0,4.0,2.0,1.0)
 
 sqrt(16.0)
 ![image](https://github.com/user-attachments/assets/e143728e-2b10-49da-8a01-69852027a387)
+
+max(3.0,4.0)
+![image](https://github.com/user-attachments/assets/ef49db03-0422-4d0e-ba30-e850be871f56)
