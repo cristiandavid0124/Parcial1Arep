@@ -1,4 +1,5 @@
 package org.edu.eci.arep;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -43,15 +44,39 @@ public class HttpCalculatorServer {
                             if (commandParts.length == 2) {
                                 String methodName = commandParts[0].trim();
                                 String[] parameters = commandParts[1].replace(")", "").split(",");
+
                                 try {
                                     if ("bbl".equals(methodName)) {
                                         double[] params = Arrays.stream(parameters).mapToDouble(Double::parseDouble).toArray();
                                         double[] sorted = bubbleSort(params);
                                         outputLine = "{\"Resultado\": \"" + Arrays.toString(sorted) + "\"}";
                                     } else {
-                                        Method methodToCall = Math.class.getMethod(methodName, double.class);
-                                        double param = Double.parseDouble(parameters[0]);
-                                        Object result = methodToCall.invoke(null, param);
+                                        // Handling methods with different numbers of parameters
+                                        Method methodToCall;
+                                        Object result;
+
+                                        // Determine the method to call based on the number of parameters
+                                        switch (methodName) {
+                                            case "max":
+                                                methodToCall = Math.class.getMethod("max", double.class, double.class);
+                                                result = methodToCall.invoke(null, Double.parseDouble(parameters[0]), Double.parseDouble(parameters[1]));
+                                                break;
+                                            case "min":
+                                                methodToCall = Math.class.getMethod("min", double.class, double.class);
+                                                result = methodToCall.invoke(null, Double.parseDouble(parameters[0]), Double.parseDouble(parameters[1]));
+                                                break;
+                                            case "pow":
+                                                methodToCall = Math.class.getMethod("pow", double.class, double.class);
+                                                result = methodToCall.invoke(null, Double.parseDouble(parameters[0]), Double.parseDouble(parameters[1]));
+                                                break;
+                                            case "sqrt":
+                                                methodToCall = Math.class.getMethod("sqrt", double.class);
+                                                result = methodToCall.invoke(null, Double.parseDouble(parameters[0]));
+                                                break;
+                                            default:
+                                                throw new NoSuchMethodException("Method " + methodName + " not found.");
+                                        }
+
                                         outputLine = "{\"Resultado\": \"" + result + "\"}";
                                     }
                                 } catch (Exception e) {
@@ -93,5 +118,3 @@ public class HttpCalculatorServer {
         return array;
     }
 }
-
-
